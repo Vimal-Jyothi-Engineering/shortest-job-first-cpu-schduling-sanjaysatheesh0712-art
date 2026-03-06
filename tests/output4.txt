@@ -1,0 +1,10 @@
+Waiting Time:
+P1 0
+P2 4
+P3 2
+Turnaround Time:
+P1 4
+P2 6
+P3 3
+Average Waiting Time: 2.00
+Average Turnaround Time: 4.33

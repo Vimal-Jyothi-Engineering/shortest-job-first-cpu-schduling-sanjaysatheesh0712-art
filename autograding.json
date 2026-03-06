@@ -1,0 +1,56 @@
+{
+  "tests": [
+    {
+      "name": "Compile Program",
+      "run": "gcc sjf.c -o sjf",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test Case 1",
+      "run": "./sjf",
+      "input": "4\nP1 0 6\nP2 1 8\nP3 2 7\nP4 3 3",
+      "output": "Waiting Time:\nP1 0\nP2 15\nP3 7\nP4 3\nTurnaround Time:\nP1 6\nP2 23\nP3 14\nP4 6\nAverage Waiting Time: 6.25\nAverage Turnaround Time: 12.25",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test Case 2",
+      "run": "./sjf",
+      "input": "3\nP1 0 5\nP2 1 3\nP3 2 2",
+      "output": "Waiting Time:\nP1 0\nP2 6\nP3 3\nTurnaround Time:\nP1 5\nP2 9\nP3 5\nAverage Waiting Time: 3.00\nAverage Turnaround Time: 6.33",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test Case 3",
+      "run": "./sjf",
+      "input": "4\nP1 0 4\nP2 0 3\nP3 0 1\nP4 0 2",
+      "output": "Waiting Time:\nP1 6\nP2 3\nP3 0\nP4 1\nTurnaround Time:\nP1 10\nP2 6\nP3 1\nP4 3\nAverage Waiting Time: 2.50\nAverage Turnaround Time: 5.00",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test Case 4",
+      "run": "./sjf",
+      "input": "3\nP1 2 4\nP2 3 2\nP3 4 1",
+      "output": "Waiting Time:\nP1 0\nP2 3\nP3 1\nTurnaround Time:\nP1 4\nP2 5\nP3 2\nAverage Waiting Time: 1.33\nAverage Turnaround Time: 3.67",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Test Case 5",
+      "run": "./sjf",
+      "input": "5\nP1 0 3\nP2 1 5\nP3 2 2\nP4 3 4\nP5 4 1",
+      "output": "Waiting Time:\nP1 0\nP2 9\nP3 1\nP4 6\nP5 2\nTurnaround Time:\nP1 3\nP2 14\nP3 3\nP4 10\nP5 3\nAverage Waiting Time: 3.60\nAverage Turnaround Time: 6.60",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    }
+  ]
+}
